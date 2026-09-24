@@ -181,3 +181,27 @@ const io = new IntersectionObserver((entries)=>{
   });
 },{threshold:.1});
 document.querySelectorAll('.section').forEach(s=>io.observe(s));
+
+/* ─── Hamburger / Mobile Nav ─── */
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileNav = document.getElementById('mobileNav');
+
+if(hamburgerBtn && mobileNav){
+  hamburgerBtn.addEventListener('click', ()=>{
+    const isOpen = mobileNav.classList.toggle('open');
+    hamburgerBtn.classList.toggle('active', isOpen);
+    hamburgerBtn.setAttribute('aria-expanded', isOpen);
+    mobileNav.setAttribute('aria-hidden', !isOpen);
+    document.body.classList.toggle('no-scroll', isOpen);
+  });
+
+  mobileNav.querySelectorAll('a').forEach(link=>{
+    link.addEventListener('click', ()=>{
+      mobileNav.classList.remove('open');
+      hamburgerBtn.classList.remove('active');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+      mobileNav.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('no-scroll');
+    });
+  });
+}

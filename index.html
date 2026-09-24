@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Studio Matsya — multidisciplinary art & design studio by Satyam Sharma. Wall murals, paintings, sculpture, textured art and immersive installations." />
+  <meta name="description" content="Studio Matsya &#8212; multidisciplinary art &amp; design studio by Satyam Sharma. Wall murals, paintings, sculpture, textured art and immersive installations." />
   <meta name="theme-color" content="#f2ede3" />
-  <title>Studio Matsya — Art & Design Studio</title>
+  <title>Studio Matsya &#8212; Art &amp; Design Studio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,7 +14,7 @@
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Studio Matsya home">
       <img src="assets/images/logo-lockup.webp" alt="Studio Matsya" />
-      <span>ART & DESIGN STUDIO</span>
+      <span>ART &amp; DESIGN STUDIO</span>
     </a>
     <nav aria-label="Primary">
       <a href="#work">Work</a>
@@ -22,13 +22,23 @@
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="menu-pill" href="#contact">Start a project ↗</a>
+    <a class="menu-pill" href="#contact">Start a project &#x2197;</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="#work" class="mobile-nav-link">Work</a>
+    <a href="#studio" class="mobile-nav-link">Studio</a>
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </div>
 
   <main id="top">
     <section class="hero section">
       <div class="hero-copy">
-        <p class="kicker">2021—2025 / JAIPUR, INDIA</p>
+        <p class="kicker">2021&#8212;2025 / JAIPUR, INDIA</p>
         <h1>WHERE THOUGHTS<br /><span>FIND FORM</span><br />AND STORY.</h1>
         <p class="hero-lede">
           Art that inhabits space. Stories that become environments.
@@ -36,7 +46,7 @@
         </p>
         <div class="hero-cta">
           <a class="button button-dark" href="#work">Explore selected work</a>
-          <a class="text-link" href="assets/studio-matsya-pitch-deck.pdf" target="_blank" rel="noreferrer">View pitch deck ↗</a>
+          <a class="text-link" href="assets/studio-matsya-pitch-deck.pdf" target="_blank" rel="noreferrer">View pitch deck &#x2197;</a>
         </div>
       </div>
       <div class="hero-art">
@@ -78,7 +88,7 @@
         <h2>EXPERIENCES<br /><span>THAT SHAPE SPACE.</span></h2>
         <p>
           Personalized art experiences for walls, rooms, objects and entire
-          environments—crafted to tell a story, evoke emotion and reflect
+          environments&#8212;crafted to tell a story, evoke emotion and reflect
           individuality.
         </p>
       </div>
@@ -114,7 +124,7 @@
     </section>
 
     <section class="quote section">
-      <p>“STEP IN—<br />EXPERIENCE ART<br />THAT SHAPES SPACE.”</p>
+      <p>&#8220;STEP IN&#8212;<br />EXPERIENCE ART<br />THAT SHAPES SPACE.&#8221;</p>
       <span>STUDIO MATSYA / JAIPUR</span>
     </section>
 
@@ -150,7 +160,7 @@
         <div class="contact-grid">
           <a href="mailto:studiomatsya8@gmail.com"><span>EMAIL</span><strong>studiomatsya8@gmail.com</strong></a>
           <a href="tel:+918107909373"><span>CALL</span><strong>+91 8107909373</strong></a>
-          <a href="https://instagram.com/studiomatsya_" target="_blank" rel="noreferrer"><span>FOLLOW</span><strong>@studiomatsya_ ↗</strong></a>
+          <a href="https://instagram.com/studiomatsya_" target="_blank" rel="noreferrer"><span>FOLLOW</span><strong>@studiomatsya_ &#x2197;</strong></a>
         </div>
       </div>
     </section>
@@ -158,12 +168,12 @@
 
   <footer class="site-footer">
     <span>STUDIO MATSYA</span>
-    <span>ART & DESIGN STUDIO</span>
-    <span>© <span id="year"></span> SATYAM SHARMA</span>
+    <span>ART &amp; DESIGN STUDIO</span>
+    <span>&copy; <span id="year"></span> SATYAM SHARMA</span>
   </footer>
 
   <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">×</button>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">&times;</button>
     <div class="lightbox-inner">
       <div class="lightbox-media"><img id="lightboxImage" alt="" /></div>
       <div class="lightbox-info">
