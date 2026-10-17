@@ -36,6 +36,36 @@ const projects = [
     meta:[["Location","Wunderland, Ajmer Rd, Jaipur"],["Size","60 × 14 FT"],["Duration","45 DAYS"]]
   },
   {
+    category:"mural", type:"WALL MURALS", title:"Practice in Perspective",
+    image:"assets/images/mural-practice.webp",
+    description:"An architectural portrait of Viaan Architects, envisioned as a collective landscape of ideas brought to life. The mural weaves together the firm's diverse projects into one continuous composition, celebrating the relationship between design, place, and the built environment. Fine linework captures the individual character of each structure, while the rising sun symbolises vision, growth, and the possibilities of architecture.",
+    meta:[["Size","7 × 5 FT"],["Duration","6 DAYS"]]
+  },
+  {
+    category:"object", type:"INSTALLATION", title:"Beyond the Blueprint",
+    image:"assets/images/mural-blueprint.webp",
+    description:"A bespoke architectural installation created for Viaan Architects, bringing their portfolio to life through a layered composition of architectural linework and coloured visualisations. The artwork captures the evolution of a project from drawing to built form, creating a striking transition between concept and reality. Anchoring the composition is a hand-sculpted rock-textured band, crafted to introduce a raw, organic counterpoint to the precision of architectural design. Integrated lighting enhances its texture, transforming the wall into a dimensional, site-specific art installation.",
+    meta:[["Location","Viaan Designs, Jaipur"],["Size","7 × 5 FT"],["Duration","10 DAYS"]]
+  },
+  {
+    category:"object", type:"RELIEF / SCULPTURAL ART", title:"Infinite Calm",
+    image:"assets/images/relief-infinite-calm.webp",
+    description:"A sculptural wall artwork that interprets Shiva through the language of movement, stillness, and nature. Flowing contours trace water, wind, mountains, and foliage around a serene central figure, creating a composition that feels both ancient and contemporary. Subtle gold detailing across the crescent, ornaments, and Nandi introduces moments of warmth against the restrained stone-like surface, transforming mythology into a refined architectural statement.",
+    meta:[["Size","6 × 4 FT"],["Duration","6 DAYS"]]
+  },
+  {
+    category:"object", type:"RELIEF / SCULPTURAL ART", title:"Divine Harmony",
+    image:"assets/images/relief-divine-harmony.webp",
+    description:"Designed as a statement artwork within an intimate architectural setting, this relief mural reinterprets the timeless imagery of Shiva and Parvati through a refined interplay of sculptural depth and decorative detail. A dark, understated ground accentuates the figures, while the floral halo, carved hair, and gold embellishments introduce warmth and visual richness. The result is an artwork that balances cultural symbolism with contemporary material expression, creating a focal point of quiet grandeur.",
+    meta:[["Size","8 × 4.5 FT"],["Duration","6 DAYS"]]
+  },
+  {
+    category:"object", type:"INSTALLATION", title:"Living Column",
+    image:"assets/images/installation-living-column.webp",
+    description:"An exploration of organic form and sculptural storytelling, this installation transforms a conventional column into a monumental tree-inspired feature. Handcrafted textures recreate the rugged character of bark, while moss-like accents and an overhead canopy add depth, movement, and natural character. Designed for Gaurang Environmentalist Group, the installation introduces a biophilic dimension to the interior, demonstrating how art can soften architectural spaces and create a more evocative relationship between people and nature.",
+    meta:[["Location","Gaurang Environmentalist Group"],["Size","10 × 3 FT"],["Duration","8 DAYS"]]
+  },
+  {
     category:"painting", type:"PAINTINGS", title:"Verdant Spirit",
     image:"assets/images/painting-verdant-1.webp",
     description:"This portrait explores the symbiotic relationship between humanity and nature, depicting a face emerging from—and consuming—a lush canopy of foliage.",
