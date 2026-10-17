@@ -213,7 +213,7 @@ function cardTemplate(p, index){
   const coverImage = p.images?.[0] || p.image;
   return `<article class="project" data-category="${p.category}" data-index="${index}" style="animation-delay:${Math.min(index*45,450)}ms">
     <div class="project-media">
-      <img src="${coverImage}" alt="${p.title}" loading="lazy">
+      <img src="${coverImage}" alt="${p.title} — ${p.type.toLowerCase()} by Studio Matsya" loading="lazy">
     </div>
     <div class="project-info">
       <div class="meta"><span>${p.type}</span><span>(${String(index+1).padStart(2,'0')})</span></div>
