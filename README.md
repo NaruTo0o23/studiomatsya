@@ -10,6 +10,6 @@ Configure DNS with your domain provider so `www` is a CNAME to `naruto0o23.githu
 
 ## SEO and site URL
 
-The canonical URL, social-sharing metadata and structured business data are in `index.html`; the sitemap is `sitemap.xml`. If the domain changes, update the URL in both files. Submit `https://www.studiomatsya.in/sitemap.xml` to Google Search Console after deployment.
+The favicon, canonical URL, social-sharing metadata and structured business data are in `index.html`; the favicon uses `assets/images/logo.webp`, and the sitemap is `sitemap.xml`. If the domain changes, update the URL in both files. Submit `https://www.studiomatsya.in/sitemap.xml` to Google Search Console after deployment.
 
 Service copy and project details are maintained in `index.html` and `script.js`, respectively.
