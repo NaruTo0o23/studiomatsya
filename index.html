@@ -178,7 +178,14 @@
   <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
     <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">&times;</button>
     <div class="lightbox-inner">
-      <div class="lightbox-media"><img id="lightboxImage" alt="" /></div>
+      <div class="lightbox-gallery" id="lightboxGallery">
+        <div class="lightbox-media">
+          <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#8592;</button>
+          <img id="lightboxImage" alt="" />
+          <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&#8594;</button>
+        </div>
+        <div class="lightbox-pagination" id="lightboxPagination" aria-label="Image navigation"></div>
+      </div>
       <div class="lightbox-info">
         <p class="kicker" id="lightboxCategory"></p>
         <h3 id="lightboxTitle"></h3>

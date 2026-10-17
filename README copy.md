@@ -9,7 +9,7 @@ A static, GitHub Pages-ready portfolio site built from the visual language and p
 - Oversized condensed headlines and thin red rules
 - Hero artwork, founder portrait and contact artwork from the deck
 - Filterable portfolio: Murals / Paintings / Objects + Space
-- Project lightbox with description, location, size and duration
+- Project lightbox with descriptions, project details and image galleries with arrow, dot and keyboard navigation
 - Original pitch deck PDF in `assets/studio-matsya-pitch-deck.pdf`
 - No build step and no framework — just HTML, CSS and JavaScript
 
