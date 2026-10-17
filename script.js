@@ -128,8 +128,8 @@ const projects = [
   },
   {
     category:"painting", type:"PAINTINGS", title:"The Azure Guardian",
-    image:"assets/images/painting-azure-room.webp",
-    images:["assets/images/painting-azure-room.webp","assets/images/painting-azure.webp"],
+    image:"assets/images/painting-azure.webp",
+    images:["assets/images/painting-azure.webp","assets/images/painting-azure-room.webp"],
     description:"Drawing inspiration from traditional folk narratives, this vertical panel features a stylized, celestial-blue feline resting beneath a solitary palm. Repetitive patterns blend indigenous art forms with modern graphic sensibilities.",
     meta:[["Size","5 × 1.5 FT"],["Duration","15 DAYS"]]
   },
@@ -212,7 +212,9 @@ const filters = [...document.querySelectorAll('.filter')];
 function cardTemplate(p, index){
   const coverImage = p.images?.[0] || p.image;
   return `<article class="project" data-category="${p.category}" data-index="${index}" style="animation-delay:${Math.min(index*45,450)}ms">
-    <img src="${coverImage}" alt="${p.title}" loading="lazy">
+    <div class="project-media">
+      <img src="${coverImage}" alt="${p.title}" loading="lazy">
+    </div>
     <div class="project-info">
       <div class="meta"><span>${p.type}</span><span>(${String(index+1).padStart(2,'0')})</span></div>
       <h3>${p.title}</h3>
@@ -221,6 +223,18 @@ function cardTemplate(p, index){
   </article>`;
 }
 container.innerHTML = projects.map(cardTemplate).join('');
+
+container.querySelectorAll('.project img').forEach(image=>{
+  const setFrameRatio = ()=>{
+    const ratio = image.naturalWidth / image.naturalHeight;
+    image.closest('.project').style.setProperty('--project-ratio', ratio);
+  };
+  if(image.complete && image.naturalWidth){
+    setFrameRatio();
+  }else{
+    image.addEventListener('load', setFrameRatio, {once:true});
+  }
+});
 
 filters.forEach(btn=>{
   btn.addEventListener('click',()=>{
