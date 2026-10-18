@@ -1,15 +1,29 @@
 # Studio Matsya
 
-Static portfolio website for Studio Matsya, the Jaipur-based art and design studio founded by Satyam Sharma.
+Static portfolio website for Studio Matsya, the Jaipur-based art and design studio founded by architect and artist Satyam Sharma.
 
-## Publish
+## Project contents
 
-The site is configured for GitHub Pages at <https://www.studiomatsya.in/>. In the repository settings, choose **Pages → Deploy from a branch**, then select `main` and `/ (root)`. Set the Pages custom domain to `www.studiomatsya.in`.
+- `index.html` contains the page structure, service copy, SEO metadata and structured business data.
+- `styles.css` contains the responsive layout and visual styles.
+- `script.js` contains the portfolio projects, category filters, image viewer and mobile navigation.
+- `assets/images/` contains the images used by the site.
+- `assets/studio-matsya-pitch-deck.pdf` is linked from the home page.
+- `sitemap.xml` lists the canonical site URL.
 
-Configure DNS with your domain provider so `www` is a CNAME to `naruto0o23.github.io`. For the apex domain (`studiomatsya.in`), add A records for `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`. Once both domains resolve to GitHub Pages, it redirects the apex domain to `www`.
+## Preview locally
 
-## SEO and site URL
+Open `index.html` in a browser. The site is static and has no build step or package dependencies.
 
-The favicon, canonical URL, social-sharing metadata and structured business data are in `index.html`; the favicon uses `assets/images/logo.webp`, and the sitemap is `sitemap.xml`. If the domain changes, update the URL in both files. Submit `https://www.studiomatsya.in/sitemap.xml` to Google Search Console after deployment.
+## Publish with GitHub Pages
 
-Service copy and project details are maintained in `index.html` and `script.js`, respectively.
+In the repository's **Settings → Pages**, choose **Deploy from a branch**, then select the `main` branch and `/ (root)`.
+
+The site uses the custom domain `www.studiomatsya.in`. Configure `www` as a CNAME to `naruto0o23.github.io`. For the apex domain, configure A records to `185.199.108.153`, `185.199.109.153`, `185.199.110.153` and `185.199.111.153`. The repository's `CNAME` file configures the Pages custom domain.
+
+## Updating the site
+
+- Add or edit portfolio entries and their image galleries in `script.js`. Keep each image path relative to the repository root and ensure the corresponding file exists in `assets/images/`.
+- Update page sections and service copy in `index.html`; update layout and styling in `styles.css`.
+- If the site domain changes, update the canonical, social-sharing and structured-data URLs in `index.html`, along with `sitemap.xml` and `CNAME`.
+- Submit `https://www.studiomatsya.in/sitemap.xml` to search engines after publishing.

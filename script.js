@@ -122,7 +122,7 @@ const projects = [
   {
     category:"painting", type:"PAINTINGS", title:"Gilded Reflections",
     image:"assets/images/painting-gilded-room.webp",
-    images:["assets/images/painting-gilded-room.webp","assets/images/painting-gilded.webp"],
+    images:["assets/images/painting-gilded-room.webp","assets/images/painting-gilded-detail.webp","assets/images/painting-gilded.webp"],
     description:"An abstract cityscape using heavy texture and a palette of teal, gold and slate to suggest a skyline reflected in water. Metallic accents catch the light, adding depth and movement.",
     meta:[["Size","6 × 5 FT"],["Duration","30 DAYS"]]
   },
@@ -328,13 +328,6 @@ document.addEventListener('keydown', e=>{
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
-
-const io = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
-  });
-},{threshold:.1});
-document.querySelectorAll('.section').forEach(s=>io.observe(s));
 
 /* ─── Hamburger / Mobile Nav ─── */
 const hamburgerBtn = document.getElementById('hamburgerBtn');
