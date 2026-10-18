@@ -23,7 +23,7 @@ The site uses the custom domain `www.studiomatsya.in`. Configure `www` as a CNAM
 
 ## Updating the site
 
-- Add or edit portfolio entries and their image galleries in `script.js`. Portfolio, hero, portrait and contact artwork are served from ImageKit at `https://ik.imagekit.io/chiragartcdn/studiomatsya/` with automatic format and quality optimization; upload each image there using its existing filename. Keep the logo and favicon in `assets/images/` so they continue to be served locally.
+- Add or edit portfolio entries and their image galleries in `script.js`. Portfolio, hero, portrait and contact artwork are served from ImageKit at `https://ik.imagekit.io/chiragartcdn/studiomatsya/` with automatic format and quality optimization; upload each image there using its existing filename. ImageKit images use anonymous CORS requests so browser image loads do not send third-party cookies. Keep the logo and favicon in `assets/images/` so they continue to be served locally.
 - Update page sections and service copy in `index.html`; update layout and styling in `styles.css`.
 - If the site domain changes, update the canonical, social-sharing and structured-data URLs in `index.html`, along with `sitemap.xml` and `CNAME`.
 - Submit `https://www.studiomatsya.in/sitemap.xml` to search engines after publishing.

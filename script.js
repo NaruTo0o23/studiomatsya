@@ -216,7 +216,7 @@ function cardTemplate(p, index){
   const coverImage = p.images?.[0] || p.image;
   return `<article class="project" data-category="${p.category}" data-index="${index}" style="animation-delay:${Math.min(index*45,450)}ms">
     <div class="project-media">
-      <img src="${imageUrl(coverImage)}" alt="${p.title} — ${p.type.toLowerCase()} by Studio Matsya" loading="lazy">
+      <img src="${imageUrl(coverImage)}" alt="${p.title} — ${p.type.toLowerCase()} by Studio Matsya" loading="lazy" crossorigin="anonymous">
     </div>
     <div class="project-info">
       <div class="meta"><span>${p.type}</span><span>(${String(index+1).padStart(2,'0')})</span></div>
@@ -271,6 +271,7 @@ function showLightboxImage(direction = 'next'){
   const imageIndex = activeImageIndex;
   lbImage.classList.remove('slide-from-left','slide-from-right');
   void lbImage.offsetWidth;
+  lbImage.crossOrigin = 'anonymous';
   lbImage.src = imageUrl(images[imageIndex]);
   lbImage.alt = `${activeProject.title} — image ${imageIndex + 1}`;
   lbImage.classList.add(direction === 'next' ? 'slide-from-right' : 'slide-from-left');
