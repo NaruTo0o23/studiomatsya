@@ -7,7 +7,7 @@ Static portfolio website for Studio Matsya, the Jaipur-based art and design stud
 - `index.html` contains the page structure, service copy, SEO metadata and structured business data.
 - `styles.css` contains the responsive layout and visual styles.
 - `script.js` contains the portfolio projects, category filters, image viewer and mobile navigation.
-- `assets/images/` contains the images used by the site.
+- `assets/images/` contains the locally served logo and favicon. Artwork is served from ImageKit.
 - `assets/studio-matsya-pitch-deck.pdf` is linked from the home page.
 - `sitemap.xml` lists the canonical site URL.
 
@@ -23,7 +23,7 @@ The site uses the custom domain `www.studiomatsya.in`. Configure `www` as a CNAM
 
 ## Updating the site
 
-- Add or edit portfolio entries and their image galleries in `script.js`. Keep each image path relative to the repository root and ensure the corresponding file exists in `assets/images/`.
+- Add or edit portfolio entries and their image galleries in `script.js`. Portfolio, hero, portrait and contact artwork are served from ImageKit at `https://ik.imagekit.io/chiragartcdn/studiomatsya/` with automatic format and quality optimization; upload each image there using its existing filename. Keep the logo and favicon in `assets/images/` so they continue to be served locally.
 - Update page sections and service copy in `index.html`; update layout and styling in `styles.css`.
 - If the site domain changes, update the canonical, social-sharing and structured-data URLs in `index.html`, along with `sitemap.xml` and `CNAME`.
 - Submit `https://www.studiomatsya.in/sitemap.xml` to search engines after publishing.
