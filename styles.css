@@ -63,7 +63,7 @@ img{display:block;max-width:100%}
 /* ─── INTRO / WHO WE ARE ─── */
 .section-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--red);padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:40px}
 .intro-grid{display:grid;grid-template-columns:1.15fr .85fr .65fr;gap:5vw;align-items:start}
-.display-title{font-family:Anton,sans-serif;font-size:clamp(36px,7vw,110px);line-height:.90;letter-spacing:-.035em;color:var(--ink);transform:scaleX(.86);transform-origin:left top;overflow-wrap:break-word;word-break:break-word}
+.display-title{font-family:Anton,sans-serif;font-size:clamp(28px,5vw,110px);line-height:.90;letter-spacing:-.035em;color:var(--ink);transform:scaleX(.86);transform-origin:left top;overflow-wrap:normal;word-break:normal}
 .display-title em{font-style:normal;color:var(--red)}
 .intro-text{font-size:16px;line-height:1.65;max-width:480px}
 .facts{margin-top:40px;border-top:1px solid var(--line)}
