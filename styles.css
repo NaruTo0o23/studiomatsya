@@ -109,7 +109,7 @@ img{display:block;max-width:100%}
 
 /* ─── QUOTE ─── */
 .quote{background:var(--red);color:var(--paper);min-height:58vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 5vw}
-.quote p{font-family:Anton,sans-serif;font-size:clamp(40px,8vw,125px);line-height:.85;letter-spacing:-.02em;margin:0;transform:scaleX(.86)}
+.quote p{font-family:Anton,sans-serif;font-size:clamp(40px,8vw,125px);line-height:.92;letter-spacing:-.02em;margin:0;transform:scaleX(.86)}
 .quote span{margin-top:34px;font-size:10px;letter-spacing:.2em;text-transform:uppercase}
 
 /* ─── PROCESS ─── */
@@ -123,7 +123,7 @@ img{display:block;max-width:100%}
 .contact{background:var(--paper-deep);display:grid;grid-template-columns:.72fr 1.28fr;gap:5vw;align-items:center}
 .contact-art{min-height:640px;display:flex;align-items:flex-end;justify-content:center;background:linear-gradient(150deg,#bdcbb0 0 45%,#a6b4c3 45%);overflow:hidden}
 .contact-art img{width:80%;height:100%;max-height:630px;object-fit:contain;mix-blend-mode:multiply}
-.contact-copy h2{font-family:Anton,sans-serif;font-size:clamp(42px,8vw,124px);line-height:.78;margin:16px 0 24px;transform:scaleX(.86);transform-origin:left}
+.contact-copy h2{font-family:Anton,sans-serif;font-size:clamp(42px,8vw,124px);line-height:.90;margin:16px 0 24px;transform:scaleX(.86);transform-origin:left}
 .contact-copy h2 span{color:var(--red)}
 .contact-lede{font-size:18px;max-width:500px}
 .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:55px}
@@ -251,7 +251,7 @@ img{display:block;max-width:100%}
 
   /* Quote */
   .quote{min-height:44vh;padding:50px 6vw}
-  .quote p{font-size:clamp(32px,12vw,64px);line-height:.88}
+  .quote p{font-size:clamp(32px,12vw,64px);line-height:.92}
 
   /* Process */
   .process-grid{grid-template-columns:1fr}
