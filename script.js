@@ -343,6 +343,7 @@ if(hamburgerBtn && mobileNav){
     hamburgerBtn.classList.toggle('active', isOpen);
     hamburgerBtn.setAttribute('aria-expanded', isOpen);
     mobileNav.setAttribute('aria-hidden', !isOpen);
+    mobileNav.inert = !isOpen;
     document.body.classList.toggle('no-scroll', isOpen);
   });
 
@@ -352,6 +353,7 @@ if(hamburgerBtn && mobileNav){
       hamburgerBtn.classList.remove('active');
       hamburgerBtn.setAttribute('aria-expanded', 'false');
       mobileNav.setAttribute('aria-hidden', 'true');
+      mobileNav.inert = true;
       document.body.classList.remove('no-scroll');
     });
   });
