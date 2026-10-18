@@ -97,8 +97,8 @@ img{display:block;max-width:100%}
 .project{position:relative;align-self:start;cursor:pointer;animation:rise .65s both}
 .project:nth-child(3n+1){grid-column:span 7}.project:nth-child(3n+2){grid-column:span 5}.project:nth-child(3n){grid-column:span 5}
 .project-media{aspect-ratio:var(--project-ratio,1.45);overflow:hidden;background:var(--paper-deep)}
-.project-media img{width:100%;height:100%;object-fit:contain;transition:filter .35s}
-.project:hover .project-media img{filter:brightness(.94)}
+.project-media img{width:100%;height:100%;object-fit:contain;transition:transform .35s ease,filter .35s ease}
+.project:hover .project-media img{transform:scale(.97);filter:brightness(.94)}
 .project-info{padding:13px 4px 4px;border-top:1px solid rgba(198,80,69,.55);margin-top:14px}
 .project-info .meta{display:flex;gap:15px;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#59534a}
 .project-info h3{font-family:Impact,"Arial Narrow",Arial,sans-serif;font-size:clamp(24px,3vw,40px);line-height:.9;letter-spacing:.01em;text-transform:uppercase;margin:9px 0 0;transform:scaleX(.86);transform-origin:left bottom}
